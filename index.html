@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wil</title>
+
+  <meta name="theme-color" content="#ffffff" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,400;0,500;1,400;1,500&display=swap"
+    rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      padding: 2em;
+      font-family: "IBM Plex Mono", monospace;
+      font-weight: 400;
+      font-style: normal;
+      font-size: 12px;
+      line-height: 1.2;
+      filter: url(#analogue);
+      background-color: #f3f4f1;
+    }
+
+    figure {
+      margin: 0 0 1em 0;
+      user-select: none;
+    }
+
+    h1,
+    h2,
+    h3,
+    p {
+      padding: 0;
+      margin: 0;
+      font-size: 1em;
+      font-weight: normal;
+    }
+
+    h1,
+    h2 {
+      font-weight: 500;
+
+    }
+
+    h1 {
+      margin: 0 0 1em 0;
+    }
+
+    a {
+      color: #000;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    ul li {
+      display: flex;
+    }
+
+    ul li:before {
+      content: "⮑";
+      margin: 0 0.5em 0 0;
+    }
+
+    ul li a {
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      min-width: 0;
+    }
+
+    address {
+      font-style: normal;
+    }
+
+    header,
+    main,
+    footer {
+      width: 30em;
+      max-width: 100%;
+    }
+
+    header:after,
+    main:after {
+      content: "--";
+      display: block;
+      margin: 2em 0;
+    }
+
+    article {
+      margin: 2em 0;
+    }
+
+    article h3 {
+      display: inline-block;
+      margin-bottom: 0.5em;
+      font-style: italic;
+    }
+
+    article h3:after {
+      content: ", ";
+    }
+
+    article p {
+      margin-bottom: 0.5em;
+    }
+
+    footer {
+      margin: 0 0 2em 0;
+    }
+
+    footer li {
+      display: inline;
+    }
+
+    footer li::before {
+      display: none;
+    }
+
+    footer address {
+      margin: 1em 0;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Wilson Tovar <em>aka Wil</em></h1>
+
+    <a href="mailto:hola@krthr.co">hola@krthr.co</a><br>
+    <a href="https://linkedin.com/in/wilsontovar">LinkedIn</a><br>
+    <a href="https://github.com/krthr">GitHub</a><br>
+    <a href="https://www.instagram.com/wilson__tovar">Instagram</a><br>
+
+  </header>
+
+  <main>
+    <h2>Projects</h2>
+
+    <article>
+      <h3>poesía.pics</h3>
+      <time datetime="2024">2023 — PRESENT</time>
+      <p>
+        Generate poetry from images using GPT-4o. Use moods to personalize the tone of the poem. Used AdonisJS, SQLite
+        and GPT-4o.
+      </p>
+      <ul>
+        <li>
+          <a href="https://poesia.pics" target="_blank">poesia.pics</a>
+        </li>
+      </ul>
+    </article>
+
+    <article>
+      <h3>podtafolio.co</h3>
+      <time datetime="2024">PRESENT</time>
+      <p>
+        Comprehensive catalog of podcasts where you can explore by topics & search. Used AdonisJS, SQLite, Typesense
+        and GPT-4o.
+      </p>
+      <ul>
+        <li>
+          <a href="https://podtafolio.co" target="_blank">podtafolio.co</a>
+        </li>
+      </ul>
+    </article>
+
+    <h2>Experience</h2>
+
+    <article>
+      <h3>Amazon</h3>
+      <span>Madrid, Spain.</span>
+      <time datetime="2024">2022 — PRESENT</time>
+      <!-- <p>
+       </p> -->
+      <ul>
+        <li>
+          I'm part of Amazon Devices, where we built the next generation of Vega OS tools for debugging and telemetry.
+        </li>
+        <li>
+          I was part of DiscoTech, where we built recommendations pipelines applying state of the art ML to help
+          customers to discover the best Amazon's products.
+        </li>
+      </ul>
+    </article>
+
+    <article>
+      <h3>Twilio</h3>
+      <span>Remote, Colombia.</span>
+      <time datetime="2022">2021 — 2022</time>
+      <p>
+        I was part of the Cloud Insights and Optimizations (CIAO)
+      </p>
+      <ul>
+        <li>
+          I was in charge of the analysis of unattributed costs across multiple AWS services, in which I applied
+          FinOps, especially the Inform stage, adding USD $13.5 MM of unattributed AWS costs.
+        </li>
+        <li>
+          I led cost optimization research of the largest buckets in S3 for the implementation of different storage
+          classes (+ USD $600k in savings per year).
+        </li>
+      </ul>
+    </article>
+  </main>
+
+  <svg>
+    <defs>
+      <filter id="analogue">
+        <feTurbulence type="fractalNoise" baseFrequency="0.001 0.001" numOctaves="8" result="grit"></feTurbulence>
+        <feGaussianBlur in="SourceGraphic" stdDeviation="0.2" result="blur"></feGaussianBlur>
+        <feDisplacementMap in="blur" in2="grit" scale="16"></feDisplacementMap>
+      </filter>
+    </defs>
+  </svg>
+</body>
+
+</html>
