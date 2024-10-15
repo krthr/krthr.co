@@ -1,5 +1,5 @@
 FROM caddy:2.8.4-alpine
 
 COPY Caddyfile /etc/caddy/Caddyfile
-COPY site /srv
+COPY index.html /srv
 
