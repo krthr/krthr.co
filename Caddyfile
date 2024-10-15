@@ -1,4 +1,7 @@
 localhost:8080
 
+http_port 8080
+https_port 8080
+
 encode zstd gzip
 file_server browse
